@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+
+* {
+    font-family: 'Questrial', sans-serif;
+    color: #fff;
+    background: linear-gradient(90deg, rgba(152,128,255,1) 0%, rgba(255,173,200,1) 100%, rgba(255,160,227,1) 100%);
+}
+
+h1 {
+    margin: 20px auto;
+    text-align: center;
+}
+
+#container {
+    width: 700px;
+    margin: 0 auto; 
+  }
+
+  .chat-input {
+    width: 500px;
+    height: 30px;
+    border: solid 1px #fff;
+    border-radius: 10px;
+  }
+
+  .chat-form {
+      text-align: center;
+  }
+
+  .chat-submit {
+    width: 80px;
+    height: 34px;
+    border: solid 1px #fff;
+    border-radius: 10px;
+    margin-left: 5px;
+    cursor: pointer;
+  }
+
+  .chat-submit:hover {
+    background: #ff85ad;
+  }
+
+  .chat-display {
+    height: 550px;
+  }
+  
+  #chatSection {
+    float: center;
+    border: 1px #fff solid;
+    border-radius: 10px;
+    padding: 10px;
+  }
+
+  .chat-box {
+    border: 1.5px solid;
+    border-radius: 20px;
+    padding: 3px;
+    margin: 5px;
+  }
