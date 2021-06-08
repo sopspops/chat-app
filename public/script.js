@@ -4,6 +4,8 @@ const Input = document.querySelector('.chat-input');
 const chatDisplay = document.querySelector('.chat-display');
 const username = prompt('What is your name?');
 
+chatDisplay.scrollTop = chatDisplay.scrollHeight;
+
 socket.emit('new user', username);
 
 chat.addEventListener('submit', event => {
@@ -19,5 +21,5 @@ socket.on('send message', (data) => {
     div.textContent = data.username + ': ' + data.message;
     div.classList.add('chat-box');
     chatDisplay.appendChild(div);
-    scrollTo(0, document.body.scrollHeight);
+    chatDisplay.scrollTo(0, document.body.scrollHeight);
 });
